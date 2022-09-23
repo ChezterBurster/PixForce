@@ -22,7 +22,7 @@ public class EquipmentManager : MonoBehaviour {
     private float _attackSpeed;
     
     public List<BulletController> bullets;
-
+    public Inventory inventory;
     public List<Transform> cannonPositions;
     
     public float life;
@@ -32,6 +32,7 @@ public class EquipmentManager : MonoBehaviour {
    
     private void Awake() {
         _transform = transform;
+        _equipments = new List<Equipment>();
         EquipUp();
         GetStatsFromEquipments();
         CalculateStats();

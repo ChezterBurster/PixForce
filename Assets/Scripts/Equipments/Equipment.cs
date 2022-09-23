@@ -5,10 +5,11 @@ namespace Equipments {
     [CreateAssetMenu(fileName = "New Equipment", menuName = "Equipments/Equipment")]
     public class Equipment : ScriptableObject {
     
-        public int life;
-        public int defense;
-        public int speed;
-        public float attackSpeed;
+        [Range(0f, 50f)] public int life;
+        [Range(0f, 50f)] public int defense;
+        [Range(0f, 50f)] public int speed;
+        [Range(0f, 50f)] public float attackSpeed;
+        public EquipmentType equipmentType;
         public GameObject equipmentPrefab;
 
         public void AddStats(EquipmentManager equipmentManager) {
@@ -23,6 +24,13 @@ namespace Equipments {
             equipment.GetComponent<DropManager>().equipment = this;
         }
 
+    }
+
+    public enum EquipmentType {
+        Body,
+        Wings,
+        Engine,
+        Cabine
     }
     
 }

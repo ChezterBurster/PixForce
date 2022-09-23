@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 920955f6212a2a84089b6136feccbf0d, type: 3}
   m_Name: DickWings
   m_EditorClassIdentifier: 
-  life: 0
-  defense: 0
-  speed: 0
-  attackSpeed: 0
+  life: 20
+  defense: 14
+  speed: 33
+  attackSpeed: 14.3
+  equipmentType: 1
   equipmentPrefab: {fileID: 0}

@@ -429,13 +429,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 11400000, guid: 10078e1e7cb13a84f9ba5079e72b9bbd, type: 2}
-  engine: {fileID: 0}
-  wings: {fileID: 0}
-  cabine: {fileID: 0}
+  engine: {fileID: 11400000, guid: c2ff98b0645d04f4b98356a252c5a699, type: 2}
+  wings: {fileID: 11400000, guid: e152823fa0cd9454bbd70ba5bae4dadc, type: 2}
+  cabine: {fileID: 11400000, guid: dc353735c467fa843bbc17528ba699a8, type: 2}
   weapon: {fileID: 11400000, guid: 1a317df5012570946882e88402084656, type: 2}
   projectile: {fileID: 11400000, guid: 7430891a7a9bcb247a12e01ac100d2a5, type: 2}
   cannonPosition: {x: 0, y: 1.5}
   bullets: []
+  inventory: {fileID: 11400000, guid: d89e040c5a715fb459c85a7508f620a2, type: 2}
   cannonPositions: []
   life: 0
   defense: 0
