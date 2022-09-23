@@ -20,7 +20,7 @@ public class BulletController : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D col) {
-        if (!col.CompareTag(father))
+        if (col.CompareTag(father))
             return;
         var manager = col.GetComponent<EquipmentManager>();
         manager.Damaged(this);
