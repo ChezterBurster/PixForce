@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour {
 
+    //CONTROl DE ENEMIGO
     private Transform _enemyTransform;
     private Rigidbody2D _rigidbody2D;
     private EquipmentManager _equipmentManager;
@@ -45,6 +46,8 @@ public class EnemyController : MonoBehaviour {
         return new Vector2(_velocityX, _velocityY);
     }
 
+
+    //
     private void LookAtPlayer() {
         var direction = player.position - _enemyTransform.position;
         var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
