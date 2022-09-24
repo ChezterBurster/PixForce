@@ -12,6 +12,7 @@ public class EquipmentManager : MonoBehaviour {
     [SerializeField] private Weapon weapon;
     [SerializeField] private Projectile projectile;
     [SerializeField] private Vector2 cannonPosition;
+    [SerializeField] private float bulletVelocity;
     
     private List<Equipment> _equipments;
     private GameObject _bulletPrefab;
@@ -70,7 +71,7 @@ public class EquipmentManager : MonoBehaviour {
     }
     
     public void PopulateBullets(Transform shipTransform, string father) {
-        for (var i = 0; i < _attackSpeed * 10 * cannonPositions.Count; i++) {
+        for (var i = 0; i < attackSpeed * 10 * cannonPositions.Count; i++) {
             var bullet = Instantiate(_bulletPrefab, shipTransform.position, Quaternion.identity).GetComponent<BulletController>();
             bullet.parent = this;
             bullet.father = father;
@@ -83,7 +84,7 @@ public class EquipmentManager : MonoBehaviour {
         foreach (var cannon in cannonPositions) {
             var bullet = bullets[0];
             bullet.gameObject.SetActive(true);
-            bullet.FireUp(shipTransform.up * 50f, GetDamage(), cannon);
+            bullet.FireUp(shipTransform.up * bulletVelocity, GetDamage(), cannon);
             bullets.Remove(bullet);
         }
     }

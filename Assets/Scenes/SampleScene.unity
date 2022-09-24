@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 639689445}
   m_Layer: 0
   m_Name: PixShip
-  m_TagString: Untagged
+  m_TagString: player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -504,6 +504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - {fileID: 11400000, guid: 954fd1131af9eda469c64641b37f9fdd, type: 2}
+  - {fileID: 11400000, guid: 82077e3f5cd548e45b1f620478169100, type: 2}
   player: {fileID: 639689444}
   spawnPoints:
   - {fileID: 342371652}

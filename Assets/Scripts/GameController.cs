@@ -23,7 +23,7 @@ public class GameController : MonoBehaviour {
     }
 
     private void Start() {
-        _waveCount = 0;
+        _waveCount = 1;
         StartCoroutine(SpawnEnemies());
     }
 }

@@ -9,12 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 920955f6212a2a84089b6136feccbf0d, type: 3}
-  m_Name: EnemyEngineOne
+  m_Script: {fileID: 11500000, guid: f5aea1df702612a4a9cad76fbe4f5ba4, type: 3}
+  m_Name: Wavemamalona
   m_EditorClassIdentifier: 
-  life: 10
-  defense: 10
-  speed: 1
-  attackSpeed: 0.8
-  equipmentType: 2
-  equipmentPrefab: {fileID: 0}
+  enemy: {fileID: 7916682825858908949, guid: 8fb39e8b532184f45863d42b7c08a938, type: 3}
+  enemyCount: 5
+  enemyWaves: 3

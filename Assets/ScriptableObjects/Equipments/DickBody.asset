@@ -15,5 +15,6 @@ MonoBehaviour:
   life: 30
   defense: 20
   speed: 5
-  attackSpeed: 10
+  attackSpeed: 44.8
+  equipmentType: 0
   equipmentPrefab: {fileID: 0}

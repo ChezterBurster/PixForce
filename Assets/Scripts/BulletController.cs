@@ -23,13 +23,14 @@ public class BulletController : MonoBehaviour {
         if (col.CompareTag(father))
             return;
         var manager = col.GetComponent<EquipmentManager>();
-        manager.Damaged(this);
+        manager?.Damaged(this);
         DestroyBullet();
     }
 
     private void Update() {
-        if (Time.time >= _bornDate + 1) {
+        if (Time.time >= _bornDate + 3) {
             DestroyBullet();
+            //Ese metodo no destruye la bala, la regresa, solo que el kevin le gusta poner nombres mamadores y pendejos
         }
     }
 
