@@ -435,6 +435,7 @@ MonoBehaviour:
   weapon: {fileID: 11400000, guid: 1a317df5012570946882e88402084656, type: 2}
   projectile: {fileID: 11400000, guid: 7430891a7a9bcb247a12e01ac100d2a5, type: 2}
   cannonPosition: {x: 0, y: 1.5}
+  bulletVelocity: 50
   bullets: []
   inventory: {fileID: 11400000, guid: d89e040c5a715fb459c85a7508f620a2, type: 2}
   cannonPositions: []
