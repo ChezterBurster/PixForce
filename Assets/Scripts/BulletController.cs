@@ -37,7 +37,7 @@ public class BulletController : MonoBehaviour {
     public void FireUp(Vector2 velocity, Vector3 damage, Transform origin) {
         _bulletTransform.position = origin.position;
         _bulletTransform.rotation = origin.rotation;
-        _rigidbody2D.velocity = velocity;
+        _rigidbody2D.velocity = velocity * Random.Range(0.9f, 1.1f);
         lifeDamage = damage.x;
         shieldDamage = damage.y;
         ignoreShield = damage.z == 1f;

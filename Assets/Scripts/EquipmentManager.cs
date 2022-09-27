@@ -22,9 +22,9 @@ public class EquipmentManager : MonoBehaviour {
     private float _movementSpeed;
     private float _attackSpeed;
     
-    public List<BulletController> bullets;
+    [HideInInspector] public List<BulletController> bullets;
     public Inventory inventory;
-    public List<Transform> cannonPositions;
+    [HideInInspector] public List<Transform> cannonPositions;
     
     public float life;
     public float defense;
