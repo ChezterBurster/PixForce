@@ -17,22 +17,27 @@ namespace Equipments {
         
             //Se encarga de colocar cada cañon en su posicion dependiendo del numero de balas por disparo
             for (var i = 0; i < bulletAmount; i++) {
-                var cannon = Instantiate(cannonPrefab, position, Quaternion.identity, parent);
+                var cannon = Instantiate(cannonPrefab, position, parent.rotation, parent);
                 manager.cannonPositions.Add(cannon.transform);
+                
             }
             //Es parte de la logica para las posiciones de los disparos
             switch (bulletAmount) {
                 case > 1 and < 4:
-                    manager.cannonPositions[0].position = new Vector2(position.x - 0.7f, position.y);
-                    manager.cannonPositions[1].position = new Vector2(position.x + 0.7f, position.y);
+                    manager.cannonPositions[0].position = new Vector2(position.x - parent.right.x, position.y - parent.right.y);
+                    manager.cannonPositions[1].position = new Vector2(position.x + parent.right.x, position.y + parent.right.y);
                     break;
-                case > 4:
-                    manager.cannonPositions[0].position = new Vector2(position.x - 0.7f, position.y);
-                    manager.cannonPositions[1].position = new Vector2(position.x + 0.7f, position.y);
-                    manager.cannonPositions[2].position = new Vector2(position.x - 1.4f, position.y);
-                    manager.cannonPositions[3].position = new Vector2(position.x + 1.4f, position.y);
+                case >= 4:
+                    manager.cannonPositions[0].position = new Vector2(position.x - 1.0f, position.y);
+                    manager.cannonPositions[1].position = new Vector2(position.x + 1.0f, position.y);
+                    manager.cannonPositions[2].position = new Vector2(position.x - 2.0f, position.y);
+                    manager.cannonPositions[3].position = new Vector2(position.x + 2.0f, position.y);
                     break;
-            }
+                
+                
+                //mandar alv to-do  este pedo xd y poner game objects
+                // todo poner cosas chidas  
+            } 
         }
     }
 }

@@ -21,6 +21,8 @@ public class ShipController : MonoBehaviour {
         _camera = Camera.main;
     }
 
+    
+
     //Parte de la inicializacion, en el start para evitar conflictos
     private void Start() {
         //se rellena la pool con las balas necesarias
@@ -40,7 +42,14 @@ public class ShipController : MonoBehaviour {
             _equipmentManager.Shoot(_shipTransform);
             _lastShoot = Time.time + _equipmentManager.GetAttackSpeed();
         }
+
+        if (_equipmentManager.weapon.bulletAmount != 1)
+        {
+            _equipmentManager = GetComponent<EquipmentManager>();
+        }
     }
+
+    
 
     //Logica para que la nave rote en dirección al cursor
     private void LookAtCursor() {

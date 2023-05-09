@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   life: 10
   defense: 10
-  speed: 3
-  attackSpeed: 0.5
+  speed: 6
+  attackSpeed: 2
   equipmentType: 0
   equipmentPrefab: {fileID: 0}

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: DickWave
   m_EditorClassIdentifier: 
   enemy: {fileID: 7916682825858908949, guid: 2354473dae76a9e4fa09ec3d40994bd0, type: 3}
-  enemyCount: 3
+  enemyCount: 5
   enemyWaves: 10

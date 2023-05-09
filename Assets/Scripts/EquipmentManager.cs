@@ -12,7 +12,7 @@ public class EquipmentManager : MonoBehaviour {
     [SerializeField] private Equipment engine;
     [SerializeField] private Equipment wings;
     [SerializeField] private Equipment cabine;
-    [SerializeField] private Weapon weapon;
+    public Weapon weapon;
     //El proyectil es el tipo de bala que dispara
     [SerializeField] private Projectile projectile;
     //Esta variable se usa para determinar desde el inspector la posicion del cañon de cada nave para que coincidan
@@ -48,8 +48,7 @@ public class EquipmentManager : MonoBehaviour {
         EquipUp();
         GetStatsFromEquipments();
         CalculateStats();
-        var position = _transform.position;
-        weapon.SetWeapon(new Vector2(position.x + cannonPosition.x, position.y + cannonPosition.y), _transform, this);
+        RefreshWeapon();
         _bulletPrefab = projectile.bulletPrefab;
     }
 
@@ -59,6 +58,17 @@ public class EquipmentManager : MonoBehaviour {
         _equipments.Add(engine);
         _equipments.Add(wings);
         _equipments.Add(cabine);
+    }
+
+    public void RefreshWeapon()
+    {
+        foreach (var cannon  in cannonPositions)
+        {
+            Destroy(cannon.gameObject);
+        }
+        cannonPositions.Clear();
+        var position = _transform.position;
+        weapon.SetWeapon(new Vector2(position.x + cannonPosition.x, position.y + cannonPosition.y), _transform, this);
     }
 
     //Geters para las variables locales y así
@@ -121,6 +131,8 @@ public class EquipmentManager : MonoBehaviour {
             Destroy(gameObject);
         }
     }
+    
+    
 
     //Calcula el daño que se va a recibir
     private Vector3 GetDamage() {
