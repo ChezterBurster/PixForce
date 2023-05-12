@@ -36,7 +36,7 @@ namespace Equipments {
                 
                 
                 //mandar alv to-do  este pedo xd y poner game objects
-                // todo poner cosas chidas  
+                // todo poner cosas chidas ry for taking  
             } 
         }
     }

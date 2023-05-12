@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-[RequireComponent(typeof(Image))]
+
 [RequireComponent(typeof(RectTransform))]
 public class Gift : MonoBehaviour
 {
@@ -11,14 +10,14 @@ public class Gift : MonoBehaviour
 
     [SerializeField] private Sprite[] sprites;
 
-    private Image image;
+    private SpriteRenderer image;
     private RectTransform _rectTransform;
     private int index = 0;
     private float timer = 0;
 
     void Start()
     {
-        image = GetComponent<Image>();
+        image = GetComponent<SpriteRenderer>();
     }
     private void Update()
     {

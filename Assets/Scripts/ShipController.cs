@@ -13,6 +13,8 @@ public class ShipController : MonoBehaviour {
     private Camera _camera;
     private EquipmentManager _equipmentManager;
 
+     
+
     //Inicializa al jugador
     private void Awake() {
         _rigidbody2D = GetComponent<Rigidbody2D>();

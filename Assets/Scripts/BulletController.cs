@@ -38,7 +38,7 @@ public class BulletController : MonoBehaviour {
 
     //un timer para que la bala no vuele al infinito
     private void Update() {
-        if (Time.time >= _bornDate + 3) {
+        if (Time.time >= _bornDate + 2) {
             DestroyBullet();//reminder que no se destruye realmente
         }
     }

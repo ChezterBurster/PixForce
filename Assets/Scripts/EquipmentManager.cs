@@ -13,6 +13,12 @@ public class EquipmentManager : MonoBehaviour {
     [SerializeField] private Equipment wings;
     [SerializeField] private Equipment cabine;
     public Weapon weapon;
+
+    #region 
+
+    
+
+    #endregion
     //El proyectil es el tipo de bala que dispara
     [SerializeField] private Projectile projectile;
     //Esta variable se usa para determinar desde el inspector la posicion del cañon de cada nave para que coincidan
@@ -37,7 +43,7 @@ public class EquipmentManager : MonoBehaviour {
     //Estoy usando un patron de diseño que se llama object pooling o algo así, paro eso es esta lista
     [HideInInspector] public List<BulletController> bullets;
     //Referencia a las posiciones de los cañones para disparar correctamente
-    [HideInInspector] public List<Transform> cannonPositions;
+     public List<Transform> cannonPositions;
     //Esta variable es solo usada por entidades jugador, considera mudarla
     public Inventory inventory;
     
