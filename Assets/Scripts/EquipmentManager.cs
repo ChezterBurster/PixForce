@@ -14,11 +14,7 @@ public class EquipmentManager : MonoBehaviour {
     [SerializeField] private Equipment cabine;
     public Weapon weapon;
 
-    #region 
 
-    
-
-    #endregion
     //El proyectil es el tipo de bala que dispara
     [SerializeField] private Projectile projectile;
     //Esta variable se usa para determinar desde el inspector la posicion del cañon de cada nave para que coincidan

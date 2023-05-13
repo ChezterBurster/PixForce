@@ -197,6 +197,16 @@ namespace ShmupBoss
             }
         }
 
+        [SerializeField] protected GameObject[] activeWeapon;
+
+        public GameObject[] ActiveWeapon
+        {
+            get
+            {
+                return activeWeapon;
+            }
+        }
+
         /// <summary>
         /// Bool needed to know if it was required to replace particle weapons after an agent
         /// is despawned or not. this replacement process is essential so that the bullets 

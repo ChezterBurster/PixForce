@@ -12,8 +12,7 @@ public class ShipController : MonoBehaviour {
     private Rigidbody2D _rigidbody2D;
     private Camera _camera;
     private EquipmentManager _equipmentManager;
-
-     
+    
 
     //Inicializa al jugador
     private void Awake() {
@@ -22,7 +21,6 @@ public class ShipController : MonoBehaviour {
         _shipTransform = transform;
         _camera = Camera.main;
     }
-
     
 
     //Parte de la inicializacion, en el start para evitar conflictos
@@ -50,7 +48,6 @@ public class ShipController : MonoBehaviour {
             _equipmentManager = GetComponent<EquipmentManager>();
         }
     }
-
     
 
     //Logica para que la nave rote en dirección al cursor
@@ -60,4 +57,5 @@ public class ShipController : MonoBehaviour {
         var rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
         _shipTransform.rotation = rotation;
     }
+    
 }

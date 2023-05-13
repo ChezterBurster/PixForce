@@ -11,6 +11,9 @@ namespace ShmupBoss
     [AddComponentMenu("Shmup Boss/Agents/Player")]
     public class Player : AgentCollidable
     {
+        #region Eventos
+        
+        
         public event CoreDelegate OnPickUp;
         public event CoreDelegate OnHeal;
         public event CoreDelegate OnHealHealth;
@@ -31,6 +34,18 @@ namespace ShmupBoss
 
         public event CoreDelegate OnPointsPickup;
         public event CoreDelegate OnCoinsPickup;
+        
+        #endregion
+
+        #region Moodificaciones Pix
+
+        [SerializeField] private Sprite Nave1, Nave2;
+        [SerializeField] private SpriteRenderer _renderer;
+        private Camera _camera;
+        private Transform _shipTransform;
+        private int currentactiveweapon = 0;
+
+        #endregion
 
         /// <summary>
         /// The max health a player can achieve after taking health upgrades.
@@ -193,6 +208,8 @@ namespace ShmupBoss
 
             Validate();
             PlayerMoverComp = GetComponent<PlayerMover>();
+            _shipTransform = transform;
+            _camera = Camera.main;
         }
 
         protected void Update()
@@ -202,7 +219,8 @@ namespace ShmupBoss
                 Activate();
                 isLateEnabled = true;
             }
-            
+
+            LookAtCursor();
             ApplyImmunity();
         }
 
@@ -437,7 +455,7 @@ namespace ShmupBoss
                         OnWeaponsUpgrade += method;
                         return;
                     }
-
+                
                 case AgentEvent.WeaponsDowngrade:
                     {
                         OnWeaponsDowngrade += method;
@@ -599,9 +617,27 @@ namespace ShmupBoss
             }
         }
 
+        public void ChangeWeapon(int amount)
+        {
+            activeWeapon[currentactiveweapon].SetActive(false);
+            activeWeapon[amount].SetActive(true);
+            currentactiveweapon = amount;
+        }
+
         public void UpgradeVisual(int amount)
         {
             CurrentVisualUpgradeStage += amount;
+            //activeWeapon[currentactiveweapon].SetActive(false);
+            //activeWeapon[amount].SetActive(true);
+            //currentactiveweapon = amount;
+            if (CurrentVisualUpgradeStage >= 3)
+            {
+                _renderer.sprite = Nave2;
+            }
+            else
+            {
+                _renderer.sprite = Nave1;
+            }
 
             if (amount > 0)
             {
@@ -725,5 +761,13 @@ namespace ShmupBoss
         {
             OnCoinsPickup?.Invoke(null);
         }
+        
+        private void LookAtCursor() {
+            var direction = _camera.ScreenToWorldPoint(Input.mousePosition) - _shipTransform.position;
+            var angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            var rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
+            _shipTransform.rotation = rotation;
+        }
+        
     }
 }

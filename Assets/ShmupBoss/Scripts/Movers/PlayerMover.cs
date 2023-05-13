@@ -15,6 +15,8 @@ namespace ShmupBoss
         [SerializeField]
         private float maxSpeed;
         
+        //public Rigidbody2D _rigidbody2D;
+        
         public override float CurrentSpeed
         {
             get
@@ -56,7 +58,10 @@ namespace ShmupBoss
         protected override void Update()
         {
             base.Update();
-            KeepInBoundries();
+            KeepInBoundries();/*
+            var horizontal = Input.GetAxis("Horizontal");
+            var vertical = Input.GetAxis("Vertical");
+            _rigidbody2D.velocity = new Vector2(horizontal, vertical) * (currentSpeed * 0.4f);*/
         }
 
         private void KeepInBoundries()
