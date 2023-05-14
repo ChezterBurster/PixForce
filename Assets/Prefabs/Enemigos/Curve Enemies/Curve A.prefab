@@ -211,10 +211,22 @@ MonoBehaviour:
   isFollowingDirection: 0
   CurvePath:
     ControlPoints:
-    - {x: 0, y: 5}
-    - {x: -2.5, y: 2.5}
-    - {x: 2.5, y: -2.5}
-    - {x: 0, y: -5}
+    - {x: -7.0473657, y: 17.487442}
+    - {x: 6.074028, y: 9.281668}
+    - {x: -5.6644807, y: 2.2193506}
+    - {x: -12.622052, y: 0.5798912}
+    - {x: -21.878002, y: -1.6011505}
+    - {x: -26.002476, y: -17.7111}
+    - {x: -20.793335, y: -24.170057}
+    - {x: -15.252377, y: -31.040445}
+    - {x: 1.3635254, y: -33.402935}
+    - {x: 7.616925, y: -26.185522}
+    - {x: 12.375412, y: -20.69346}
+    - {x: -3.168017, y: 2.5394392}
+    - {x: 11.388403, y: 3.3857512}
+    - {x: 24.62358, y: 4.155248}
+    - {x: 35.44879, y: -35.918663}
+    - {x: 28.972752, y: -44.347725}
     CurvePoints: []
   HandleSize: 0.5
 --- !u!114 &3250036841833829640
@@ -229,7 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab20dd437e2d90e498e8a1ab4e84e75c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstMunitionShotDelayTime: 0
+  firstMunitionShotDelayTime: 1
   isMunitionFollowingMovement: 0
   firstParticleShotDelayTime: 0
   isParticleFollowingMovement: 0

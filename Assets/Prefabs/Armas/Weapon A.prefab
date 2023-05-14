@@ -192,7 +192,7 @@ MonoBehaviour:
     BulletsNumber: 0
     ArcAngleSpread: 0
     FiringSFX:
-      ac: {fileID: 0}
+      ac: {fileID: 8300000, guid: ada8d06edd5d2cb4b95ef7d673414a1f, type: 3}
       volume: 0
     FiringSfxCoolDownTime: 0
   - Rate: 5
