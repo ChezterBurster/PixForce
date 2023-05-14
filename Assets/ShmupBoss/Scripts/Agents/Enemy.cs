@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace ShmupBoss
 {
@@ -11,6 +13,8 @@ namespace ShmupBoss
     [AddComponentMenu("Shmup Boss/Agents/Enemy")]
     public class Enemy : AgentCollidable, IInGamePool
     {
+        
+        
         /// <summary>
         /// This is related to the "OnAllEnemyDestroyed" destroyed event and not to the actual pooling
         /// system, this event is related to the number of active enemies in level and is raised when
@@ -370,5 +374,7 @@ namespace ShmupBoss
             Gizmos.color = Color.yellow;
             GizmosExtension.DrawCircle(transform.position, dropRadius);
         }
+        
+       
     }
 }
