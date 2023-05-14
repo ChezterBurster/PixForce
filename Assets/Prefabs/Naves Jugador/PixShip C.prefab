@@ -310,10 +310,130 @@ PrefabInstance:
       propertyPath: inputRotation
       value: 
       objectReference: {fileID: 1887000580739375157}
+    - target: {fileID: 2229664559694260732, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[0].FiringSFX.ac
+      value: 
+      objectReference: {fileID: 8300000, guid: ada8d06edd5d2cb4b95ef7d673414a1f, type: 3}
+    - target: {fileID: 2229664559694260732, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[1].FiringSFX.ac
+      value: 
+      objectReference: {fileID: 8300000, guid: ada8d06edd5d2cb4b95ef7d673414a1f, type: 3}
+    - target: {fileID: 2229664559694260732, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[2].FiringSFX.ac
+      value: 
+      objectReference: {fileID: 8300000, guid: ada8d06edd5d2cb4b95ef7d673414a1f, type: 3}
+    - target: {fileID: 2229664559694260732, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[3].FiringSFX.ac
+      value: 
+      objectReference: {fileID: 8300000, guid: ada8d06edd5d2cb4b95ef7d673414a1f, type: 3}
+    - target: {fileID: 2229664559694260732, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[4].FiringSFX.ac
+      value: 
+      objectReference: {fileID: 8300000, guid: ada8d06edd5d2cb4b95ef7d673414a1f, type: 3}
+    - target: {fileID: 2229664559694260732, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[0].FiringSFX.volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229664559694260732, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[1].FiringSFX.volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229664559694260732, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[2].FiringSFX.volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229664559694260732, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[3].FiringSFX.volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229664559694260732, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[4].FiringSFX.volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229664559694260732, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[0].FiringSfxCoolDownTime
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229664559694260732, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[1].FiringSfxCoolDownTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229664559694260732, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[2].FiringSfxCoolDownTime
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229664559694260732, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[3].FiringSfxCoolDownTime
+      value: 0.142
+      objectReference: {fileID: 0}
+    - target: {fileID: 2229664559694260732, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[4].FiringSfxCoolDownTime
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4293123455057542071, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
       propertyPath: inputRotation
       value: 
       objectReference: {fileID: 1887000580739375157}
+    - target: {fileID: 4293123455057542071, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[0].FiringSFX.ac
+      value: 
+      objectReference: {fileID: 8300000, guid: ada8d06edd5d2cb4b95ef7d673414a1f, type: 3}
+    - target: {fileID: 4293123455057542071, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[1].FiringSFX.ac
+      value: 
+      objectReference: {fileID: 8300000, guid: ada8d06edd5d2cb4b95ef7d673414a1f, type: 3}
+    - target: {fileID: 4293123455057542071, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[2].FiringSFX.ac
+      value: 
+      objectReference: {fileID: 8300000, guid: ada8d06edd5d2cb4b95ef7d673414a1f, type: 3}
+    - target: {fileID: 4293123455057542071, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[3].FiringSFX.ac
+      value: 
+      objectReference: {fileID: 8300000, guid: ada8d06edd5d2cb4b95ef7d673414a1f, type: 3}
+    - target: {fileID: 4293123455057542071, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[4].FiringSFX.ac
+      value: 
+      objectReference: {fileID: 8300000, guid: ada8d06edd5d2cb4b95ef7d673414a1f, type: 3}
+    - target: {fileID: 4293123455057542071, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[0].FiringSFX.volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293123455057542071, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[1].FiringSFX.volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293123455057542071, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[2].FiringSFX.volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293123455057542071, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[3].FiringSFX.volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293123455057542071, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[4].FiringSFX.volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293123455057542071, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[0].FiringSfxCoolDownTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293123455057542071, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[1].FiringSfxCoolDownTime
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293123455057542071, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[2].FiringSfxCoolDownTime
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293123455057542071, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[3].FiringSfxCoolDownTime
+      value: 0.142
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293123455057542071, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
+      propertyPath: stages.Array.data[4].FiringSfxCoolDownTime
+      value: 0.08
+      objectReference: {fileID: 0}
     - target: {fileID: 7811030162377540187, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
       propertyPath: inputRotation
       value: 

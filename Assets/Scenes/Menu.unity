@@ -382,7 +382,7 @@ MonoBehaviour:
   m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.45
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2055,7 +2055,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1250519498}
         m_TargetAssemblyTypeName: UI.UIController, Assembly-CSharp
-        m_MethodName: ActivateMainMenu
+        m_MethodName: MainSetBool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2067,7 +2067,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1250519498}
         m_TargetAssemblyTypeName: UI.UIController, Assembly-CSharp
-        m_MethodName: MainSetBool
+        m_MethodName: ActivateMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

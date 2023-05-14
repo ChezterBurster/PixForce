@@ -588,6 +588,7 @@ GameObject:
   m_Component:
   - component: {fileID: 87445555}
   - component: {fileID: 87445554}
+  - component: {fileID: 87445556}
   m_Layer: 0
   m_Name: Level
   m_TagString: Untagged
@@ -633,6 +634,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &87445556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 87445553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15f85aac7d6a85c42afe5ae21ebb6d89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundMusic: {fileID: 8300000, guid: 9962016290b86044b98ede37411ad2a4, type: 3}
+  MasterMixer: {fileID: 0}
+  MusicSource: {fileID: 0}
+  SfxSource: {fileID: 0}
+  uiAudioClips:
+  - volumetricAC:
+      ac: {fileID: 0}
+      volume: 1
+    levelUIEventTrigger: 5
+  - volumetricAC:
+      ac: {fileID: 0}
+      volume: 1
+    levelUIEventTrigger: 6
+  - volumetricAC:
+      ac: {fileID: 0}
+      volume: 1
+    levelUIEventTrigger: 0
+  - volumetricAC:
+      ac: {fileID: 0}
+      volume: 1
+    levelUIEventTrigger: 1
+  - volumetricAC:
+      ac: {fileID: 0}
+      volume: 1
+    levelUIEventTrigger: 3
+  - volumetricAC:
+      ac: {fileID: 0}
+      volume: 1
+    levelUIEventTrigger: 2
+  - volumetricAC:
+      ac: {fileID: 0}
+      volume: 1
+    levelUIEventTrigger: 4
 --- !u!1 &101824252
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,7 +1574,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1968558107}
         m_TargetAssemblyTypeName: UI.OnPlayUI, Assembly-CSharp
-        m_MethodName: ActivatePauseMenu
+        m_MethodName: PauseSetBool
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1540,7 +1586,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1968558107}
         m_TargetAssemblyTypeName: UI.OnPlayUI, Assembly-CSharp
-        m_MethodName: PauseSetBool
+        m_MethodName: ActivatePauseMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4663,8 +4709,68 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1887000579569125484, guid: f223bd2748c0aa4489278a638e8f372d, type: 3}
+      propertyPath: stages.Array.data[0].FiringSFX.ac
+      value: 
+      objectReference: {fileID: 8300000, guid: ada8d06edd5d2cb4b95ef7d673414a1f, type: 3}
+    - target: {fileID: 1887000579569125484, guid: f223bd2748c0aa4489278a638e8f372d, type: 3}
+      propertyPath: stages.Array.data[1].FiringSFX.ac
+      value: 
+      objectReference: {fileID: 8300000, guid: ada8d06edd5d2cb4b95ef7d673414a1f, type: 3}
+    - target: {fileID: 1887000579569125484, guid: f223bd2748c0aa4489278a638e8f372d, type: 3}
+      propertyPath: stages.Array.data[2].FiringSFX.ac
+      value: 
+      objectReference: {fileID: 8300000, guid: ada8d06edd5d2cb4b95ef7d673414a1f, type: 3}
+    - target: {fileID: 1887000579569125484, guid: f223bd2748c0aa4489278a638e8f372d, type: 3}
+      propertyPath: stages.Array.data[3].FiringSFX.ac
+      value: 
+      objectReference: {fileID: 8300000, guid: ada8d06edd5d2cb4b95ef7d673414a1f, type: 3}
+    - target: {fileID: 1887000579569125484, guid: f223bd2748c0aa4489278a638e8f372d, type: 3}
+      propertyPath: stages.Array.data[4].FiringSFX.ac
+      value: 
+      objectReference: {fileID: 8300000, guid: ada8d06edd5d2cb4b95ef7d673414a1f, type: 3}
+    - target: {fileID: 1887000579569125484, guid: f223bd2748c0aa4489278a638e8f372d, type: 3}
       propertyPath: stages.Array.data[3].ArcAngleSpread
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887000579569125484, guid: f223bd2748c0aa4489278a638e8f372d, type: 3}
+      propertyPath: stages.Array.data[0].FiringSFX.volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887000579569125484, guid: f223bd2748c0aa4489278a638e8f372d, type: 3}
+      propertyPath: stages.Array.data[1].FiringSFX.volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887000579569125484, guid: f223bd2748c0aa4489278a638e8f372d, type: 3}
+      propertyPath: stages.Array.data[2].FiringSFX.volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887000579569125484, guid: f223bd2748c0aa4489278a638e8f372d, type: 3}
+      propertyPath: stages.Array.data[3].FiringSFX.volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887000579569125484, guid: f223bd2748c0aa4489278a638e8f372d, type: 3}
+      propertyPath: stages.Array.data[4].FiringSFX.volume
+      value: 0.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887000579569125484, guid: f223bd2748c0aa4489278a638e8f372d, type: 3}
+      propertyPath: stages.Array.data[0].FiringSfxCoolDownTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887000579569125484, guid: f223bd2748c0aa4489278a638e8f372d, type: 3}
+      propertyPath: stages.Array.data[1].FiringSfxCoolDownTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887000579569125484, guid: f223bd2748c0aa4489278a638e8f372d, type: 3}
+      propertyPath: stages.Array.data[2].FiringSfxCoolDownTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887000579569125484, guid: f223bd2748c0aa4489278a638e8f372d, type: 3}
+      propertyPath: stages.Array.data[3].FiringSfxCoolDownTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1887000579569125484, guid: f223bd2748c0aa4489278a638e8f372d, type: 3}
+      propertyPath: stages.Array.data[4].FiringSfxCoolDownTime
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1887000580739375118, guid: f223bd2748c0aa4489278a638e8f372d, type: 3}
       propertyPath: m_Name
