@@ -42,7 +42,7 @@ namespace UI {
         {
             GameManager.Instance.AssignSelectedPlayer(avatarIndex);
             Debug.Log("se ha seleccionado la nave" + avatarIndex);
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("UI Complete Scene");
         }
 
         public void PlayAmbient() {
