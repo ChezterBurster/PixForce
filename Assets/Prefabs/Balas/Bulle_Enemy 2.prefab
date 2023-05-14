@@ -86,7 +86,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   poolLimit: 50
   isIndependentOfWeaponRotation: 0
-  damage: 1
+  damage: 2
   lifetime: 0
   speed: 30
 --- !u!212 &1651758099594527875

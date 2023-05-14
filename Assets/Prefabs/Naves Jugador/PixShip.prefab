@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1887000580739375158}
   - component: {fileID: 1887000580739375161}
   - component: {fileID: 639689449}
+  - component: {fileID: -294927178365444407}
   m_Layer: 0
   m_Name: PixShip
   m_TagString: player
@@ -176,6 +177,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   maxSpeed: 30
+--- !u!114 &-294927178365444407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887000580739375118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4544360c5ffe6854eaa3af24173b237c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetRenderers:
+  - {fileID: 2755168224165251456}
+  flashEffects:
+  - color: {r: 1, g: 0, b: 0, a: 0}
+    flashTime: 0.1
+    playerEvent: 2
 --- !u!1 &7822909550167602474
 GameObject:
   m_ObjectHideFlags: 0
