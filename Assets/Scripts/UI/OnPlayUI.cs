@@ -1,9 +1,12 @@
+using AudioManager;
 using UnityEngine;
 using UnityEngine.Events;
 
 namespace UI {
     public class OnPlayUI : MonoBehaviour {
-    
+
+        [SerializeField] private SfxEvent sfxUI;
+        [SerializeField] private AudioSource audioSource;
         public UnityEvent pauseMenuEvent;
         private bool _pauseMenuSet;
         public UnityEvent settingsMenuEvent;
@@ -18,6 +21,10 @@ namespace UI {
             pauseMenuEvent.Invoke();
             _pauseMenuSet = true;
             _settingsMenuSet = false;
+        }
+
+        public void PlayUISound() {
+            sfxUI.Play(audioSource);
         }
 
         public void PauseSetBool() {

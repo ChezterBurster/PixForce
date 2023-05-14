@@ -259,9 +259,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SoundEffects:
   - volumetricAC:
-      ac: {fileID: 0}
-      volume: 0
-    enemyEventTrigger: 0
+      ac: {fileID: 8300000, guid: 6f920981373fb9e49983e879d3326841, type: 3}
+      volume: 1
+    enemyEventTrigger: 1
 --- !u!114 &521904045379465548
 MonoBehaviour:
   m_ObjectHideFlags: 0
