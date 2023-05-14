@@ -2,24 +2,26 @@ using UnityEngine;
 using UnityEngine.Events;
 
 namespace UI {
-    public class UIController : MonoBehaviour {
-
-        public UnityEvent mainMenuEvent;
-        private bool _mainMenuSet;
+    public class OnPlayUI : MonoBehaviour {
+    
+        public UnityEvent pauseMenuEvent;
+        private bool _pauseMenuSet;
         public UnityEvent settingsMenuEvent;
         private bool _settingsMenuSet;
         public UnityEvent exitWindowEvent;
+        public UnityEvent returnEvent;
     
-        public void ActivateMainMenu() {
-            if (_mainMenuSet)
+        public void ActivatePauseMenu() {
+            if (_pauseMenuSet)
                 return;
-            mainMenuEvent.Invoke();
-            _mainMenuSet = true;
+            Time.timeScale = 0f;
+            pauseMenuEvent.Invoke();
+            _pauseMenuSet = true;
             _settingsMenuSet = false;
         }
 
-        public void MainSetBool() {
-            _mainMenuSet = false;
+        public void PauseSetBool() {
+            _pauseMenuSet = false;
         }
 
         public void ActivateSettingsMenu() {
@@ -35,12 +37,8 @@ namespace UI {
         }
 
         private void Update() {
-            if (Input.anyKeyDown && !_mainMenuSet) {
-                ActivateMainMenu();
-            }
-        
-            if (Input.GetKeyDown(KeyCode.Escape)) {
-                ActivateExitWindow();
+            if (Input.GetKeyDown(KeyCode.Escape) && !_pauseMenuSet) {
+                ActivatePauseMenu();
             }
         }
 
@@ -48,8 +46,10 @@ namespace UI {
             exitWindowEvent.Invoke();
         }
 
-        public void PlayEvent() {
-            //Go to play scene
+        public void ReturnToGame() {
+            returnEvent.Invoke();
+            Time.timeScale = 1f;
         }
+        
     }
 }
