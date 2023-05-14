@@ -245,9 +245,12 @@ MonoBehaviour:
   targetRenderers:
   - {fileID: 1887000580739375154}
   flashEffects:
-  - color: {r: 1, g: 0, b: 0, a: 0}
+  - color: {r: 1, g: 0, b: 0, a: 0.62352943}
     flashTime: 0.1
     playerEvent: 2
+  - color: {r: 0.4009434, g: 1, b: 0.47225967, a: 1}
+    flashTime: 0.5
+    playerEvent: 17
 --- !u!1001 &2430751990694150517
 PrefabInstance:
   m_ObjectHideFlags: 0
