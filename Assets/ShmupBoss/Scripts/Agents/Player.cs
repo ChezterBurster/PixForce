@@ -393,7 +393,8 @@ namespace ShmupBoss
             {
                 Level.Instance.AdjustPlayerLives(-1);
             }
-
+            
+            _renderer.sprite = Nave1;
             RaiseOnElimination();
             gameObject.SetActive(false);
         }
