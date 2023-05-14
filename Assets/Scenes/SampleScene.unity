@@ -609,7 +609,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 24.345335
+  orthographic size: 26.610018
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -633,7 +633,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -14.141504, z: -99}
+  m_LocalPosition: {x: 0, y: -11.8768215, z: -99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1468,64 +1468,6 @@ Transform:
   - {fileID: 1328519279}
   m_Father: {fileID: 0}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1548198006
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1548198008}
-  - component: {fileID: 1548198007}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1548198007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1548198006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92c03d37f19c4614f87f6934988d049b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  screenCreatorOption: 0
-  backgroundColor: {r: 0, g: 0, b: 0, a: 0}
-  backgroundSprite: {fileID: 0}
-  MainMenuSceneIndex: 0
-  minLevelSceneIndex: 0
-  maxLevelSceneIndex: 0
-  playerSelections:
-  - Vertical: {fileID: 1887000580739375118, guid: f223bd2748c0aa4489278a638e8f372d, type: 3}
-    Horizontal: {fileID: 0}
-  - Vertical: {fileID: 1887000580739375118, guid: 67074683b32483c4c9f23c85c6685526, type: 3}
-    Horizontal: {fileID: 0}
-  - Vertical: {fileID: 1887000580739375118, guid: b21ee754ebb266b469e91d6b93c54467, type: 3}
-    Horizontal: {fileID: 0}
-  eventSystem: {fileID: 0}
---- !u!4 &1548198008
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1548198006}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45.027737, y: 4.7436686, z: -0.02104406}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1591900001
 GameObject:
