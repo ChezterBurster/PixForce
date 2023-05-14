@@ -259,9 +259,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SoundEffects:
   - volumetricAC:
-      ac: {fileID: 0}
-      volume: 0
-    enemyEventTrigger: 0
+      ac: {fileID: 8300000, guid: 6f920981373fb9e49983e879d3326841, type: 3}
+      volume: 1
+    enemyEventTrigger: 1
 --- !u!114 &521904045379465548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,6 +356,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5917313656627659030}
     m_Modifications:
+    - target: {fileID: 7833138801719199154, guid: 1362659d412dccd459bdf2920c0fc783, type: 3}
+      propertyPath: inputRotation
+      value: 
+      objectReference: {fileID: 5822969716108038295}
     - target: {fileID: 9033372898374696444, guid: 1362659d412dccd459bdf2920c0fc783, type: 3}
       propertyPath: m_Name
       value: Enemy Weapon A

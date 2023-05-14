@@ -158,6 +158,7 @@ GameObject:
   - component: {fileID: 1887000580739375161}
   - component: {fileID: 639689449}
   - component: {fileID: 6429112607367657498}
+  - component: {fileID: -548932240632347442}
   m_Layer: 0
   m_Name: PixShip B
   m_TagString: player
@@ -391,6 +392,23 @@ MonoBehaviour:
   - color: {r: 0.504717, g: 1, b: 0.5639667, a: 0.56078434}
     flashTime: 0.5
     playerEvent: 17
+--- !u!114 &-548932240632347442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887000580739375118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a341c3343a2126c42a370c9f47428f0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SoundEffects:
+  - volumetricAC:
+      ac: {fileID: 8300000, guid: 0109e82fb77dc4041a75bda36d00cde2, type: 3}
+      volume: 1
+    playerEventTrigger: 2
 --- !u!1 &1911427128989422139
 GameObject:
   m_ObjectHideFlags: 0
@@ -10253,6 +10271,66 @@ PrefabInstance:
       propertyPath: inputRotation
       value: 
       objectReference: {fileID: 1887000580739375157}
+    - target: {fileID: 5896685400762320466, guid: 95e721ceb2bd40e4e8e08b180a428557, type: 3}
+      propertyPath: stages.Array.data[0].FiringSFX.ac
+      value: 
+      objectReference: {fileID: 8300000, guid: ada8d06edd5d2cb4b95ef7d673414a1f, type: 3}
+    - target: {fileID: 5896685400762320466, guid: 95e721ceb2bd40e4e8e08b180a428557, type: 3}
+      propertyPath: stages.Array.data[1].FiringSFX.ac
+      value: 
+      objectReference: {fileID: 8300000, guid: ada8d06edd5d2cb4b95ef7d673414a1f, type: 3}
+    - target: {fileID: 5896685400762320466, guid: 95e721ceb2bd40e4e8e08b180a428557, type: 3}
+      propertyPath: stages.Array.data[2].FiringSFX.ac
+      value: 
+      objectReference: {fileID: 8300000, guid: ada8d06edd5d2cb4b95ef7d673414a1f, type: 3}
+    - target: {fileID: 5896685400762320466, guid: 95e721ceb2bd40e4e8e08b180a428557, type: 3}
+      propertyPath: stages.Array.data[3].FiringSFX.ac
+      value: 
+      objectReference: {fileID: 8300000, guid: ada8d06edd5d2cb4b95ef7d673414a1f, type: 3}
+    - target: {fileID: 5896685400762320466, guid: 95e721ceb2bd40e4e8e08b180a428557, type: 3}
+      propertyPath: stages.Array.data[4].FiringSFX.ac
+      value: 
+      objectReference: {fileID: 8300000, guid: 9fa31fda91e700b40a54511c909f3e94, type: 3}
+    - target: {fileID: 5896685400762320466, guid: 95e721ceb2bd40e4e8e08b180a428557, type: 3}
+      propertyPath: stages.Array.data[0].FiringSFX.volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896685400762320466, guid: 95e721ceb2bd40e4e8e08b180a428557, type: 3}
+      propertyPath: stages.Array.data[1].FiringSFX.volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896685400762320466, guid: 95e721ceb2bd40e4e8e08b180a428557, type: 3}
+      propertyPath: stages.Array.data[2].FiringSFX.volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896685400762320466, guid: 95e721ceb2bd40e4e8e08b180a428557, type: 3}
+      propertyPath: stages.Array.data[3].FiringSFX.volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896685400762320466, guid: 95e721ceb2bd40e4e8e08b180a428557, type: 3}
+      propertyPath: stages.Array.data[4].FiringSFX.volume
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896685400762320466, guid: 95e721ceb2bd40e4e8e08b180a428557, type: 3}
+      propertyPath: stages.Array.data[0].FiringSfxCoolDownTime
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896685400762320466, guid: 95e721ceb2bd40e4e8e08b180a428557, type: 3}
+      propertyPath: stages.Array.data[1].FiringSfxCoolDownTime
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896685400762320466, guid: 95e721ceb2bd40e4e8e08b180a428557, type: 3}
+      propertyPath: stages.Array.data[2].FiringSfxCoolDownTime
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896685400762320466, guid: 95e721ceb2bd40e4e8e08b180a428557, type: 3}
+      propertyPath: stages.Array.data[3].FiringSfxCoolDownTime
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896685400762320466, guid: 95e721ceb2bd40e4e8e08b180a428557, type: 3}
+      propertyPath: stages.Array.data[4].FiringSfxCoolDownTime
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95e721ceb2bd40e4e8e08b180a428557, type: 3}
 --- !u!114 &2939387688240920259 stripped

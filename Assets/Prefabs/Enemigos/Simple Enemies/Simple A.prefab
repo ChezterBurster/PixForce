@@ -157,7 +157,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1af10366ba840804c92e5668f879f812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundEffects: []
+  SoundEffects:
+  - volumetricAC:
+      ac: {fileID: 8300000, guid: 6f920981373fb9e49983e879d3326841, type: 3}
+      volume: 0.8
+    enemyEventTrigger: 1
 --- !u!114 &2196240182018200421
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5315,7 +5315,7 @@ PrefabInstance:
     - target: {fileID: 2229664559694260732, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
       propertyPath: stages.Array.data[4].FiringSFX.ac
       value: 
-      objectReference: {fileID: 8300000, guid: ada8d06edd5d2cb4b95ef7d673414a1f, type: 3}
+      objectReference: {fileID: 8300000, guid: 9fa31fda91e700b40a54511c909f3e94, type: 3}
     - target: {fileID: 2229664559694260732, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
       propertyPath: stages.Array.data[0].FiringSFX.volume
       value: 1
@@ -5334,7 +5334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2229664559694260732, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
       propertyPath: stages.Array.data[4].FiringSFX.volume
-      value: 1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2229664559694260732, guid: cda0ee28eec99b04f9658865e3e8e3e5, type: 3}
       propertyPath: stages.Array.data[0].FiringSfxCoolDownTime
