@@ -1,6 +1,4 @@
-using System;
 using AudioManager;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -19,7 +17,7 @@ namespace UI {
         private bool _settingsMenuSet;
         public UnityEvent exitWindowEvent;
 
-        private int avatarIndex = 0;
+        private int _avatarIndex = 0;
         [SerializeField] private SfxEvent sfxUI;
         [SerializeField] private AudioSource audioSource;
         [SerializeField] private MusicEvent menuAmbient;
@@ -38,14 +36,13 @@ namespace UI {
             sfxUI.Play(audioSource);
         }
 
-        public void SelectedPlayer()
-        {
-            GameManager.Instance.AssignSelectedPlayer(avatarIndex);
-            Debug.Log("se ha seleccionado la nave" + avatarIndex);
+        public void SelectedPlayer() {
+            GameManager.Instance.AssignSelectedPlayer(_avatarIndex);
+            Debug.Log("se ha seleccionado la nave" + _avatarIndex);
             SceneManager.LoadScene("UI Complete Scene");
         }
 
-        public void PlayAmbient() {
+        private void PlayAmbient() {
             menuAmbient.Play(ambientSource);
         }
 
@@ -60,13 +57,12 @@ namespace UI {
             _settingsMenuSet = true;
         }
 
-        public void ActivatePlayerMenu()
-        {
+        public void ActivatePlayerMenu() {
             if (_playerMenuSet)
                 return;
             playerMenuEvent.Invoke();
             _playerMenuSet = true;
-            EnableAvatarCanvas(avatarIndex);
+            EnableAvatarCanvas(_avatarIndex);
         }
 
         public void ExitGame() {
@@ -92,47 +88,28 @@ namespace UI {
             exitWindowEvent.Invoke();
         }
         
-        private void EnableAvatarCanvas(int index)
-        {
+        private void EnableAvatarCanvas(int index) {
             avatarCanvases[index].gameObject.SetActive(true);
         }
-        private void DisableAllAvatarCanvases()
-        {
-            foreach (RectTransform avatarCanvas in avatarCanvases)
-            {
+        private void DisableAllAvatarCanvases() {
+            foreach (RectTransform avatarCanvas in avatarCanvases) {
                 avatarCanvas.gameObject.SetActive(false);
             }
         }
-        public void NextAvatar()
-        {
-            if (avatarIndex + 1 > avatarCanvases.Length - 1)
-            {
+        public void NextAvatar() {
+            if (_avatarIndex + 1 > avatarCanvases.Length - 1)
                 return;
-            }
-
-            avatarIndex++;
-
+            _avatarIndex++;
             DisableAllAvatarCanvases();
-            EnableAvatarCanvas(avatarIndex);
-            
+            EnableAvatarCanvas(_avatarIndex);
         }
 
-        public void PreviousAvatar()
-        {
-            if (avatarIndex - 1 < 0)
-            {
+        public void PreviousAvatar() {
+            if (_avatarIndex - 1 < 0) 
                 return;
-            }
-
-            avatarIndex--;
-
+            _avatarIndex--;
             DisableAllAvatarCanvases();
-            EnableAvatarCanvas(avatarIndex);
-            
-        }
-
-        public void PlayEvent() {
-            //Go to play scene
+            EnableAvatarCanvas(_avatarIndex);
         }
     }
 }

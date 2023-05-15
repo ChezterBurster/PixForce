@@ -242,6 +242,14 @@ MonoBehaviour:
       ac: {fileID: 8300000, guid: 0109e82fb77dc4041a75bda36d00cde2, type: 3}
       volume: 1
     playerEventTrigger: 2
+  - volumetricAC:
+      ac: {fileID: 8300000, guid: 00af5573161be4e43abd54c5f51e0f63, type: 3}
+      volume: 1
+    playerEventTrigger: 17
+  - volumetricAC:
+      ac: {fileID: 8300000, guid: 82bf41f8ca3e9df4eafe6184a000e9eb, type: 3}
+      volume: 1
+    playerEventTrigger: 1
 --- !u!1 &6355335621064045507
 GameObject:
   m_ObjectHideFlags: 0

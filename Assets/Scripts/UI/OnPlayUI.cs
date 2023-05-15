@@ -1,6 +1,9 @@
+using System;
 using AudioManager;
+using ShmupBoss;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 namespace UI {
     public class OnPlayUI : MonoBehaviour {
@@ -49,6 +52,10 @@ namespace UI {
             }
         }
 
+        private void Awake() {
+            SubscribeToLevelEvents();
+        }
+
         public void ActivateExitWindow() {
             exitWindowEvent.Invoke();
         }
@@ -56,6 +63,22 @@ namespace UI {
         public void ReturnToGame() {
             returnEvent.Invoke();
             Time.timeScale = 1f;
+        }
+
+        private void SubscribeToLevelEvents() {
+            if (Level.Instance == null)
+                return;
+            Level.Instance.OnGameOver += GameOver;
+        }
+        
+        private void GameOver(System.EventArgs args) {
+            if(Level.Instance == null) 
+                return;
+            GoToGameOver();
+        }
+
+        private void GoToGameOver() {
+            SceneManager.LoadScene("Game Over");
         }
         
     }
