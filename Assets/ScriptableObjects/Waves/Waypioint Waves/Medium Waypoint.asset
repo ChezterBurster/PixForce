@@ -12,14 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e37eabe64148ec4d8b1b7e6377b3802, type: 3}
   m_Name: Medium Waypoint
   m_EditorClassIdentifier: 
-  NumberOfEnemiesToSpawn: 3
+  NumberOfEnemiesToSpawn: 2
   isSpawningEnemiesInRandomOrder: 0
-  TimeBetweenEnemies: 2
-  isRandomTimeBetweenEnemies: 0
-  minTimeBetweenEnemies: 0
-  maxTimeBetweenEnemies: 0
+  TimeBetweenEnemies: 0
+  isRandomTimeBetweenEnemies: 1
+  minTimeBetweenEnemies: 1
+  maxTimeBetweenEnemies: 3
   depthIndex: 20
   enemyPrefabs:
-  - {fileID: 2673213817967475900, guid: 891b2363d959e8f4a80cb1398beab5e6, type: 3}
   - {fileID: 2673213817967475900, guid: b69392a28d7cde0499491943f75845d2, type: 3}
-  - {fileID: 2673213817967475900, guid: 197a14f8647097b49bac328e394d3ddd, type: 3}

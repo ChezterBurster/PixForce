@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e37eabe64148ec4d8b1b7e6377b3802, type: 3}
   m_Name: Extreme Waypoint
   m_EditorClassIdentifier: 
-  NumberOfEnemiesToSpawn: 3
-  isSpawningEnemiesInRandomOrder: 0
-  TimeBetweenEnemies: 2
-  isRandomTimeBetweenEnemies: 0
-  minTimeBetweenEnemies: 0
-  maxTimeBetweenEnemies: 0
+  NumberOfEnemiesToSpawn: 5
+  isSpawningEnemiesInRandomOrder: 1
+  TimeBetweenEnemies: 0
+  isRandomTimeBetweenEnemies: 1
+  minTimeBetweenEnemies: 1
+  maxTimeBetweenEnemies: 5
   depthIndex: 20
   enemyPrefabs:
   - {fileID: 2673213817967475900, guid: 891b2363d959e8f4a80cb1398beab5e6, type: 3}
