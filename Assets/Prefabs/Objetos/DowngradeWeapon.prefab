@@ -202,5 +202,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   isFollowingDirection: 0
-  magnetSpeed: 7
-  magnetRadius: 10
+  magnetSpeed: 10
+  magnetRadius: 20
