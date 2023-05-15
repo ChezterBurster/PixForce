@@ -44,6 +44,10 @@ PrefabInstance:
       propertyPath: stage.Rate
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4604765107477297627, guid: d63a77d2e21eb214cbf28df2fd53792c, type: 3}
+      propertyPath: inputRotation
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5101577363139807818, guid: d63a77d2e21eb214cbf28df2fd53792c, type: 3}
       propertyPath: m_Name
       value: WeaponMunitionEnemy
@@ -109,6 +113,10 @@ PrefabInstance:
     - target: {fileID: 4604765107477297627, guid: d63a77d2e21eb214cbf28df2fd53792c, type: 3}
       propertyPath: stage.Rate
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4604765107477297627, guid: d63a77d2e21eb214cbf28df2fd53792c, type: 3}
+      propertyPath: inputRotation
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5101577363139807818, guid: d63a77d2e21eb214cbf28df2fd53792c, type: 3}
       propertyPath: m_Name

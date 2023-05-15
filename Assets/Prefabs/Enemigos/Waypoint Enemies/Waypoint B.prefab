@@ -346,10 +346,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3973507351168116002}
     m_Modifications:
-    - target: {fileID: 5123167390172218536, guid: b90ef9795a381494291771815ca21f89, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.87
-      objectReference: {fileID: 0}
     - target: {fileID: 6421734110104893251, guid: b90ef9795a381494291771815ca21f89, type: 3}
       propertyPath: m_Name
       value: Particle trial enemy B
@@ -415,11 +411,11 @@ PrefabInstance:
     - target: {fileID: 5297766319869742196, guid: 821d5d2bea55b5b44b31bf8c3d74587f, type: 3}
       propertyPath: inputRotation
       value: 
-      objectReference: {fileID: 5217374961217353606}
+      objectReference: {fileID: 3973507351168116002}
     - target: {fileID: 7833138801719199154, guid: 821d5d2bea55b5b44b31bf8c3d74587f, type: 3}
       propertyPath: inputRotation
       value: 
-      objectReference: {fileID: 5217374961217353606}
+      objectReference: {fileID: 3973507351168116002}
     - target: {fileID: 9033372898374696444, guid: 821d5d2bea55b5b44b31bf8c3d74587f, type: 3}
       propertyPath: m_Name
       value: Enemy Weapon B

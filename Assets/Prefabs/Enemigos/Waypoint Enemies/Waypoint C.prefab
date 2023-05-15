@@ -135,7 +135,9 @@ MonoBehaviour:
   - WaitTime: 0
     Position: {x: 24.459549, y: 0.5893879}
   - WaitTime: 0
-    Position: {x: 40.70861, y: -29.042427}
+    Position: {x: 40.042847, y: -29.042427}
+  - WaitTime: 0
+    Position: {x: 64.68185, y: -22.60086}
   HandleSize: 0.5
 --- !u!114 &8595272947277592656
 MonoBehaviour:
@@ -356,10 +358,6 @@ PrefabInstance:
       propertyPath: inputRotation
       value: 
       objectReference: {fileID: 3973507351168116002}
-    - target: {fileID: 7833138801719199154, guid: a0e6cd518ca306c4c8cb09ecda3dd01a, type: 3}
-      propertyPath: stage.MunitionPrefab
-      value: 
-      objectReference: {fileID: 8932198810592165012, guid: 9d61a898c4b7f14499ffde2fd5f5bea7, type: 3}
     - target: {fileID: 9033372898374696444, guid: a0e6cd518ca306c4c8cb09ecda3dd01a, type: 3}
       propertyPath: m_Name
       value: Enemy Weapon C
