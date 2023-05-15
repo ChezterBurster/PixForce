@@ -48,13 +48,13 @@ MonoBehaviour:
   streams:
   - Waves:
     - waveData: {fileID: 11400000, guid: 5dcf63b597a669149a87ba5fbab6f9f2, type: 2}
-      TimeForNextWave: 10
+      TimeForNextWave: 5
     - waveData: {fileID: 11400000, guid: 702b73aa1e13fe74a9dc516c26957c1b, type: 2}
-      TimeForNextWave: 10
+      TimeForNextWave: 5
     - waveData: {fileID: 11400000, guid: 4a71014b42fcc7b40a0e6ccf9366a636, type: 2}
-      TimeForNextWave: 10
+      TimeForNextWave: 5
     - waveData: {fileID: 11400000, guid: 64f6a1a9c5b7dba44b1a27f543a8cc76, type: 2}
-      TimeForNextWave: 10
+      TimeForNextWave: 5
     IncreasedAmount: 0.5
     StartLevel: 1
     EndLevel: 0
