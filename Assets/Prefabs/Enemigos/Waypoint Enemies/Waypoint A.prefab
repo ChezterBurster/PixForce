@@ -104,8 +104,12 @@ MonoBehaviour:
   collisionDamage: 5
   canTakeCollisions: 1
   collisionCoolDownTime: 1
-  dropRadius: 0
-  drops: []
+  dropRadius: 2
+  drops:
+  - PickupPrefab: {fileID: 3312945297706329276, guid: 5cb026c464801e94dbfed7accf8c55c2, type: 3}
+    DropChance: 25
+  - PickupPrefab: {fileID: 3312945297706329276, guid: 209575b6eec30434fada7ed63b6a860c, type: 3}
+    DropChance: 30
   score: 0
   coins: 0
   disableAfterTime: 0
@@ -128,13 +132,19 @@ MonoBehaviour:
   loopBackToPoint: 0
   waypoints:
   - WaitTime: 0
-    Position: {x: 5.6021404, y: 19.522594}
+    Position: {x: -52.293053, y: -22.12132}
   - WaitTime: 0
-    Position: {x: -9.768219, y: -7.1374164}
+    Position: {x: -34.348286, y: 0.7850814}
   - WaitTime: 0
-    Position: {x: 9.946749, y: -28.596907}
+    Position: {x: -22.352678, y: -31.44088}
   - WaitTime: 0
-    Position: {x: -11.629177, y: -34.68065}
+    Position: {x: -13.660591, y: -18.226225}
+  - WaitTime: 0
+    Position: {x: 13.966593, y: -36.712063}
+  - WaitTime: 0
+    Position: {x: 43.62519, y: -16.194815}
+  - WaitTime: 0
+    Position: {x: 21.685953, y: 3.1035867}
   HandleSize: 0.5
 --- !u!114 &8595272947277592656
 MonoBehaviour:

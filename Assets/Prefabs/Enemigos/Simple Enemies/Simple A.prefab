@@ -104,8 +104,12 @@ MonoBehaviour:
   collisionDamage: 5
   canTakeCollisions: 1
   collisionCoolDownTime: 1
-  dropRadius: 0
-  drops: []
+  dropRadius: 2
+  drops:
+  - PickupPrefab: {fileID: 3312945297706329276, guid: 5cb026c464801e94dbfed7accf8c55c2, type: 3}
+    DropChance: 5
+  - PickupPrefab: {fileID: 3312945297706329276, guid: 209575b6eec30434fada7ed63b6a860c, type: 3}
+    DropChance: 10
   score: 0
   coins: 0
   disableAfterTime: 0
