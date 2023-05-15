@@ -189,8 +189,12 @@ MonoBehaviour:
   collisionDamage: 5
   canTakeCollisions: 1
   collisionCoolDownTime: 1
-  dropRadius: 0
-  drops: []
+  dropRadius: 2
+  drops:
+  - PickupPrefab: {fileID: 3312945297706329276, guid: 5cb026c464801e94dbfed7accf8c55c2, type: 3}
+    DropChance: 30
+  - PickupPrefab: {fileID: 3312945297706329276, guid: 209575b6eec30434fada7ed63b6a860c, type: 3}
+    DropChance: 30
   score: 0
   coins: 0
   disableAfterTime: 0
@@ -212,10 +216,22 @@ MonoBehaviour:
   isFollowingDirection: 0
   CurvePath:
     ControlPoints:
-    - {x: 0, y: 5}
-    - {x: -2.5, y: 2.5}
-    - {x: 2.5, y: -2.5}
-    - {x: 0, y: -5}
+    - {x: -56.24267, y: -41.199333}
+    - {x: -21.856245, y: -32.560368}
+    - {x: -26.792448, y: -21.167458}
+    - {x: -35.318443, y: -12.711101}
+    - {x: -37.82867, y: -10.221376}
+    - {x: -48.54164, y: 4.0453706}
+    - {x: -24.712563, y: 3.404285}
+    - {x: -0.8834839, y: 2.7631993}
+    - {x: 28.08446, y: 3.7337503}
+    - {x: 33.09633, y: -6.769396}
+    - {x: 38.1082, y: -17.272541}
+    - {x: 29.275856, y: -23.172604}
+    - {x: 3.5925426, y: -18.873512}
+    - {x: -20.112226, y: -14.905606}
+    - {x: -12.065577, y: -39.920097}
+    - {x: 52.51335, y: -35.390587}
     CurvePoints: []
   HandleSize: 0.5
 --- !u!114 &3250036841833829640

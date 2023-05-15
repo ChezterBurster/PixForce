@@ -10,16 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a7b3707e003aa5348b8f6b4695ce8958, type: 3}
-  m_Name: Welcome
+  m_Name: Medium Curve
   m_EditorClassIdentifier: 
-  NumberOfEnemiesToSpawn: 3
-  isSpawningEnemiesInRandomOrder: 0
+  NumberOfEnemiesToSpawn: 5
+  isSpawningEnemiesInRandomOrder: 1
   TimeBetweenEnemies: 0
   isRandomTimeBetweenEnemies: 1
-  minTimeBetweenEnemies: 1
-  maxTimeBetweenEnemies: 8
-  depthIndex: 1
+  minTimeBetweenEnemies: 3
+  maxTimeBetweenEnemies: 7
+  depthIndex: 20
   enemyPrefabs:
   - {fileID: 6237205055578423690, guid: de3019903284ebf4297348497ec2376a, type: 3}
-  - {fileID: 6237205055578423690, guid: de3019903284ebf4297348497ec2376a, type: 3}
-  - {fileID: 6237205055578423690, guid: de3019903284ebf4297348497ec2376a, type: 3}
+  - {fileID: 6237205055578423690, guid: 90c1f2baaf5d29a41b3d54157977fd70, type: 3}

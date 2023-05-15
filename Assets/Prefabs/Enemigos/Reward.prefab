@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f1f59fb7e9b860f49b25765a4de25b7f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 61930ca350a01a741a008b3d6befee9c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 4432768712449026877}
   - component: {fileID: 6412013991860217637}
   m_Layer: 27
-  m_Name: Mine
+  m_Name: Reward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -219,9 +219,7 @@ MonoBehaviour:
   dropRadius: 5
   drops:
   - PickupPrefab: {fileID: 3312945297706329276, guid: 5cb026c464801e94dbfed7accf8c55c2, type: 3}
-    DropChance: 30
-  - PickupPrefab: {fileID: 3312945297706329276, guid: 209575b6eec30434fada7ed63b6a860c, type: 3}
-    DropChance: 30
+    DropChance: 75
   score: 0
   coins: 0
   disableAfterTime: 0
