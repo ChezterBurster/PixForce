@@ -79,7 +79,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.97
+  m_Radius: 2
 --- !u!114 &5775935024817156178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,7 +158,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1af10366ba840804c92e5668f879f812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundEffects: []
+  SoundEffects:
+  - volumetricAC:
+      ac: {fileID: 8300000, guid: 6f920981373fb9e49983e879d3326841, type: 3}
+      volume: 0.8
+    enemyEventTrigger: 1
 --- !u!114 &2196240182018200421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,7 +176,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   previewFXsHierarchy: {fileID: 0}
-  fxs: []
+  fxs:
+  - fxGo: {fileID: 4303345541191631572, guid: 9b3506327a9ddd54bb2afa4f8612db86, type: 3}
+    hideFromPreview: 0
+    modifyScale: {x: 1, y: 1, z: 1}
+    startPositionOption: 0
+    agentPositionOffset: {x: 0, y: 0, z: 0}
+    spawnXPositionRatio: 0
+    spawnYPositionRatio: 0
+    depthIndex: 0
+    inputPosition: {x: 0, y: 0, z: 0}
+    enemyEvent: 1
 --- !u!114 &1221065384559789626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -397,6 +411,10 @@ PrefabInstance:
       propertyPath: inputRotation
       value: 
       objectReference: {fileID: 5575768681257147091}
+    - target: {fileID: 7833138801719199154, guid: a0e6cd518ca306c4c8cb09ecda3dd01a, type: 3}
+      propertyPath: stage.MunitionPrefab
+      value: 
+      objectReference: {fileID: 8932198810592165012, guid: 9d61a898c4b7f14499ffde2fd5f5bea7, type: 3}
     - target: {fileID: 9033372898374696444, guid: a0e6cd518ca306c4c8cb09ecda3dd01a, type: 3}
       propertyPath: m_Name
       value: Enemy Weapon C

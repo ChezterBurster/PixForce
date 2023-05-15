@@ -286,7 +286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   previewFXsHierarchy: {fileID: 0}
   fxs:
-  - fxGo: {fileID: 0}
+  - fxGo: {fileID: 4303345541191631572, guid: 9b3506327a9ddd54bb2afa4f8612db86, type: 3}
     hideFromPreview: 0
     modifyScale: {x: 1, y: 1, z: 1}
     startPositionOption: 0

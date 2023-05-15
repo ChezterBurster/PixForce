@@ -79,7 +79,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 2
 --- !u!114 &9019261487738749292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,9 +125,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  mode: 0
+  mode: 1
   loopBackToPoint: 0
-  waypoints: []
+  waypoints:
+  - WaitTime: 0
+    Position: {x: 6.478203, y: 23.48351}
+  - WaitTime: 0
+    Position: {x: -38.457478, y: -21.51261}
+  - WaitTime: 0
+    Position: {x: 37.413147, y: -34.11895}
   HandleSize: 0.5
 --- !u!114 &8595272947277592656
 MonoBehaviour:
@@ -141,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab20dd437e2d90e498e8a1ab4e84e75c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstMunitionShotDelayTime: 0
+  firstMunitionShotDelayTime: 1
   isMunitionFollowingMovement: 0
   firstParticleShotDelayTime: 0
   isParticleFollowingMovement: 0
@@ -157,7 +163,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1af10366ba840804c92e5668f879f812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundEffects: []
+  SoundEffects:
+  - volumetricAC:
+      ac: {fileID: 8300000, guid: 6f920981373fb9e49983e879d3326841, type: 3}
+      volume: 0.8
+    enemyEventTrigger: 1
 --- !u!114 &6796811766562619432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,7 +181,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   previewFXsHierarchy: {fileID: 0}
-  fxs: []
+  fxs:
+  - fxGo: {fileID: 4303345541191631572, guid: 9b3506327a9ddd54bb2afa4f8612db86, type: 3}
+    hideFromPreview: 0
+    modifyScale: {x: 1, y: 1, z: 1}
+    startPositionOption: 0
+    agentPositionOffset: {x: 0, y: 0, z: 0}
+    spawnXPositionRatio: 0
+    spawnYPositionRatio: 0
+    depthIndex: 0
+    inputPosition: {x: 0, y: 0, z: 0}
+    enemyEvent: 1
 --- !u!114 &8976325105378181155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -392,6 +412,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3186038754029165530}
     m_Modifications:
+    - target: {fileID: 5297766319869742196, guid: 821d5d2bea55b5b44b31bf8c3d74587f, type: 3}
+      propertyPath: inputRotation
+      value: 
+      objectReference: {fileID: 5217374961217353606}
+    - target: {fileID: 7833138801719199154, guid: 821d5d2bea55b5b44b31bf8c3d74587f, type: 3}
+      propertyPath: inputRotation
+      value: 
+      objectReference: {fileID: 5217374961217353606}
     - target: {fileID: 9033372898374696444, guid: 821d5d2bea55b5b44b31bf8c3d74587f, type: 3}
       propertyPath: m_Name
       value: Enemy Weapon B

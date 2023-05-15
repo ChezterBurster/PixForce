@@ -163,7 +163,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 2
 --- !u!114 &5780800323797617822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,7 +187,7 @@ MonoBehaviour:
   isTriggeringMunitionFXWhenHit: 1
   collisionDamage: 5
   canTakeCollisions: 1
-  collisionCoolDownTime: 0
+  collisionCoolDownTime: 1
   dropRadius: 0
   drops: []
   score: 0

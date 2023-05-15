@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3eef59000605ba844ab9b36760ea8492, type: 3}
-  m_Name: Ahora si prueba chida
+  m_Name: TestSimple
   m_EditorClassIdentifier: 
-  NumberOfEnemiesToSpawn: 5
-  isSpawningEnemiesInRandomOrder: 1
+  NumberOfEnemiesToSpawn: 3
+  isSpawningEnemiesInRandomOrder: 0
   TimeBetweenEnemies: 1
   isRandomTimeBetweenEnemies: 0
   minTimeBetweenEnemies: 0
@@ -27,3 +27,5 @@ MonoBehaviour:
   maxRandomSpawnPosition: 0.7
   enemyPrefabs:
   - {fileID: 3871851765095664269, guid: 252e8222f2023954db30b93108862232, type: 3}
+  - {fileID: 3871851765095664269, guid: 8ec1cc4a3dfb2e54cb3381cd3892d3b4, type: 3}
+  - {fileID: 3871851765095664269, guid: fe13f7d9589b8cc41a87cc2291d174de, type: 3}

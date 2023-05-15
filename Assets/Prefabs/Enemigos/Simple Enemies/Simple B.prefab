@@ -79,7 +79,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.97
+  m_Radius: 2
 --- !u!114 &5775935024817156178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,7 +158,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1af10366ba840804c92e5668f879f812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundEffects: []
+  SoundEffects:
+  - volumetricAC:
+      ac: {fileID: 8300000, guid: 6f920981373fb9e49983e879d3326841, type: 3}
+      volume: 0.8
+    enemyEventTrigger: 1
 --- !u!114 &2196240182018200421
 MonoBehaviour:
   m_ObjectHideFlags: 0

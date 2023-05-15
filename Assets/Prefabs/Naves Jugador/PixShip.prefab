@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 639689449}
   - component: {fileID: -294927178365444407}
   - component: {fileID: -7671141700667014534}
-  - component: {fileID: -7404414023114291324}
+  - component: {fileID: 8904152406654696203}
   m_Layer: 0
   m_Name: PixShip
   m_TagString: player
@@ -225,7 +225,7 @@ MonoBehaviour:
     depthIndex: 0
     inputPosition: {x: 0, y: 0, z: 0}
     playerEventTrigger: 1
---- !u!114 &-7404414023114291324
+--- !u!114 &8904152406654696203
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -242,14 +242,6 @@ MonoBehaviour:
       ac: {fileID: 8300000, guid: 0109e82fb77dc4041a75bda36d00cde2, type: 3}
       volume: 1
     playerEventTrigger: 2
-  - volumetricAC:
-      ac: {fileID: 8300000, guid: 00af5573161be4e43abd54c5f51e0f63, type: 3}
-      volume: 1
-    playerEventTrigger: 17
-  - volumetricAC:
-      ac: {fileID: 8300000, guid: 82bf41f8ca3e9df4eafe6184a000e9eb, type: 3}
-      volume: 1
-    playerEventTrigger: 1
 --- !u!1 &6355335621064045507
 GameObject:
   m_ObjectHideFlags: 0
